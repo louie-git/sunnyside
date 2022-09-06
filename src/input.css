@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+.header{
+    background-image: url(/images/mobile/image-header.jpg);
+    width: auto;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    position:relative;
+    width: 25px;
+    height:25px;
+    top: -7px;
+}
+.top,
+.mid,
+.bot{
+    position:absolute;
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mid{
+    transform: translate(-50%,7px);
+}
+.bot{
+    transform: translate(-50%,14px);
+}
+.graphic{
+    background-image: url(/images/mobile/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: auto;
+}
+.photography{
+    background-image: url(/images/mobile/image-photography.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: auto;
+}
+@media (min-width:768px){
+    .header{
+        background-image: url(/images/desktop/image-header.jpg);
+        width: auto;
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .graphic{
+        background-image: url(/images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: auto;
+    }
+    .photography{
+        background-image: url(/images/desktop/image-photography.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: auto;
+    }
+}
